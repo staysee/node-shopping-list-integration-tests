@@ -50,7 +50,6 @@ describe("Recipes", function() {
         expect(res.body).to.be.a("object");
         expect(res.body).to.include.keys("id", "name", "ingredients");
         expect(res.body.id).to.not.equal(null);
-        // expect(res.body.name).
         expect(res.body.ingredients).to.be.a("array");
         expect(res.body.ingredients).to.include.members(newReceipe.ingredients);
       });
