@@ -51,7 +51,7 @@ describe("Recipes", function() {
         expect(res.body).to.include.keys("id", "name", "ingredients");
         expect(res.body.id).to.not.equal(null);
         expect(res.body.ingredients).to.be.a("array");
-        expect(res.body.ingredients).to.include.members(newReceipe.ingredients);
+        expect(res.body.ingredients).to.include.members(newRecipe.ingredients);
       });
   });
 
@@ -59,7 +59,7 @@ describe("Recipes", function() {
   it("should update items on PUT", function() {
     const updateData = {
       name: "foo",
-      ingredients: ["bar","fizz"];
+      ingredients: ["bar","fizz"]
     };
 
     return (
@@ -77,10 +77,7 @@ describe("Recipes", function() {
         })
 
         .then(function(res) {
-          expect(res).to.have.status(200);
-          expect(res).to.be.json;
-          expect(res.body).to.be.a("object");
-          expect(res.body).to.deep.equal(updateData);
+          expect(res).to.have.status(204);
         })
     );
   });
