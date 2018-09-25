@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: pdPIDv7CKnH7CMyQcGUIhKgT1JkRl49erF5ovs5iGfxxksnCQCryqdbagaxiKoVioFlgwIEZH/fxU+Wca06cgzqGwmKYoPhRxA1+VAX+MMOUqFJGajwJ7em0GHo/uUoFHhCet7fiywniO3rAAm/M/1ZDQOS8aBpUVHjFTA7kWknxIOcoYyHire+uxUxgHOofqgTg4bXF7+EZT/JXDMt0RRoMXm3+ah8TddpreyNfBZ6eU0JhTiSsTgs1vdqW9A6aGrNrK+hNeYg8cLX8K2dRSbK9icN3Y3tDVfTfQOdK1zpid8PgNLKcrTuLrmWDnYe/dz9JZx+GwAUtGimj85JW3+LSbEU+VFbz+8p7KhuWNzK2KLSrNbcthdTwQssZ5j4hnaKN7/Dje0WWcoYG4pPlN9IKxsgJEe23e8DAEaBohFQKOdQkvtjdVP/p6+2i/c1BWRfP1nwHaZNpiiz7rsP1kv2y6hy5QFOpc9sXWm6AOuKaPOtbBiEQtkDm/YJ/tdlX2EOxyoPCOBR9ja2uWATWxHd4dQRnxKRafYUrDiP39elCWkX9QY5K+5ljt7c+t5+IBGXG6JbN/JEIy6YK9mGqufKgl3V48JZXEA1/19gn4/F/mbiPr6YRB42fBEfUCzgnjNcoGdeSO9Sbq6j+dVNdnsi/2Cvhq8wJURF/ogDF0rk=
+  app: whispering-chamber-98155
+  on:
+    repo: staysee/node-shopping-list-integration-tests
